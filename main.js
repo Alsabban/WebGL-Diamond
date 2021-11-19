@@ -5,24 +5,10 @@ if (!drawing) {
     throw new Error('WebGL not supported');
 }
 
-// vertexData = [...]
-
-// create buffer
-// load vertexData into buffer
-
-// create vertex shader
-// create fragment shader
-// create program
-// attach shaders to program
-
-// enable vertex attributes
-
-// draw
-
 const vertexData = [
     0, 1, 0,    // V1.position
-    0.5, 0, 0,   // V2.position
-    -0.5, 0, 0,  // V3.position
+    0.4, 0, 0,   // V2.position
+    -0.4, 0, 0,  // V3.position
     0, -1, 0     //V4.position
 ];
 
