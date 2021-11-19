@@ -5,7 +5,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
 #Implement do_GET() to change path to the html file
     def do_GET(self):
         if self.path == '/':
-            self.path = 'page.html'
+            self.path = 'Part 1/page.html'
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 # Create an object of the above class

@@ -5,15 +5,16 @@ if (!drawing) {
     throw new Error('WebGL not supported');
 }
 
+
 const vertexData = [
     0, 1, 0,    // V1.position
-    0.4, 0, 0,   // V2.position
-    -0.4, 0, 0,  // V3.position
+    0.5, 0, 0,   // V2.position
+    -0.5, 0, 0,  // V3.position
     0, -1, 0     //V4.position
 ];
 
 const colorData = [
-    0, 0.5, 1,    // V1.color
+    0, 0.7, 0.7,    // V1.color
     0, 1, 0,    // V2.color
     1, 0, 0, // V3.color
     0.5, 0.5, 0  //V4.color
