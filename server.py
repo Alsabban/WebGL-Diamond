@@ -2,6 +2,7 @@ import http.server
 import socketserver
 
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
+#Implement do_GET() to change path to the html file
     def do_GET(self):
         if self.path == '/':
             self.path = 'page.html'
@@ -14,5 +15,5 @@ PORT = 8000
 my_server = socketserver.TCPServer(("", PORT), handler_object)
 print("Running on port: "+str(PORT))
 
-# Star the server
+# Start the server
 my_server.serve_forever()
